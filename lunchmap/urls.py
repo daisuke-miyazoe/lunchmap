@@ -1,4 +1,5 @@
 from django.urls import path
+# from rest_framework import routers
 
 from . import views
 
@@ -10,4 +11,6 @@ urlpatterns = [
     path("create/", views.CreateView.as_view(), name="create"),
     path("<int:pk>/update/", views.UpdateView.as_view(), name="update"),
     path("<int:pk>/delete/", views.DeleteView.as_view(), name="delete"),
+    # path('category/<str:category>/', views.CategoryView.as_view(), name='category'),
+    # path('api/',include(defaultRouter.urls)),
 ]

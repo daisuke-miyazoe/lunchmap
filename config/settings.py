@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lunchmap',
     'bootstrap4',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
