@@ -3,6 +3,9 @@ from django.urls import reverse
 
 
 class Category(models.Model):
+    class Meta:
+        app_label = 'lunchmap'
+
     name = models.CharField(max_length=255)
     author = models.ForeignKey(
         "auth.User",
@@ -16,6 +19,9 @@ class Category(models.Model):
 
 
 class Shop(models.Model):
+    class Meta:
+        app_label = 'lunchmap'
+
     name = models.CharField(max_length=255)
     address = models.CharField(max_length=255)
     author = models.ForeignKey(
